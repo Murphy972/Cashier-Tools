@@ -1,0 +1,21 @@
+.cream-background {
+  background-color: #ffcc99
+}
+.grey-background {
+  background-color: grey
+}
+.custom-font {
+  font-family: Arial, Helvetica, sans-serif
+}
+.lightblue-background {
+  background-color: #ccffff
+}
+.white-background {
+  background-color: #ffffff
+}
+.solid-border {
+  border-style: solid;
+}
+.ridged-border {
+  border-style: ridge
+}
