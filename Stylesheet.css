@@ -19,3 +19,16 @@
 .ridged-border {
   border-style: ridge
 }
+.error-message {
+  margin: 10px;
+  width: 180px;
+  height: 40px;
+  font-size: 4vw;
+}
+.warning-message {
+  margin: 10px;
+  width: 180px;
+  height: 40px;
+  font-size: 3vw;
+  padding: 5px;
+}

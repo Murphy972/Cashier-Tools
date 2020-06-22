@@ -5,8 +5,13 @@
           "password": "noname"
     },
     {
-          "name": "Matt",
-          "username": "MattM",
-          "password": "Matt1"
+      "name": "Matt",
+      "username": "MattU",
+      "password": "MattP"
+    },
+    {
+      "name": "Josh",
+      "username": "JoshU",
+      "password": "JoshP"
     }
 ]

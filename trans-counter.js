@@ -3,6 +3,7 @@
 var newSignup = document.getElementById("new-signup");
 var newScan = document.getElementById("new-cardscan");
 var transButton = document.getElementById("trans-btn");
+var resetButton = document.getElementById("reset-btn");
 //Actual Values
 var transCount = 0
 var signupCount = 0
@@ -40,8 +41,24 @@ function writeScanPercentage(){
   scanPercentage.innerHTML = "Scan Percentage: " + scanPercent.toFixed() + "%";
 }
 
+function reset(){
+  transCount = 0;
+  signupCount = 0;
+  scanCount = 0;
+  transCounter.innerHTML = "Trans Count:  ";
+  signupCounter.innerHTML = "Signup Count: ";
+  document.getElementById("new-signup").checked = false;
+  document.getElementById("new-cardscan").checked = false;
+  scanPercentage.innerHTML = "Scan Percentage: ";
+}
 
-transButton.addEventListener("click", addToTranscount);
-transButton.addEventListener("click", addToSignupcount);
-transButton.addEventListener("click", addToscanCount);
-transButton.addEventListener("click", writeScanPercentage);
+transButton.addEventListener("click", function(){
+  addToscanCount();
+  addToSignupcount();
+  addToTranscount();
+  writeScanPercentage();
+});
+
+resetButton.addEventListener("click", function(){
+  reset();
+});
