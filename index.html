@@ -16,15 +16,16 @@
         <br/>
         <div class="container cream-background solid-border">
           <div class="row">
-            <div class="col">
+            <div id="the-head" class="col">
               <h2>Login</h2>
+              <div id="attempt-warning" class="float-right alert alert-warning warning-message" role="alert"></div>
             </div>
           </div>
           <br/>
-          <div class="row"
+          <div class="row">
               <p>Username</p>
             <div class="col">
-              <input id="exist-user" autocomplete="off" type="text" style="width: 200px">
+              <input id="username-input" autocomplete="off" type="text" style="width: 200px">
             </div>
           </div>
           <br/>
@@ -33,14 +34,16 @@
               <p>Password</p>
           <!--  </div> -->
             <div class="col">
-              <input id="exist-password" autocomplete="off" type="text" style="width: 200px">
+              <input id="password-input" autocomplete="off" type="text" style="width: 200px">
             </div>
           </div>
           <div class="container">
             <div class="row">
               <div class="col justify-content-center">
                 <button id="user-check-btn" class="lightblue-background solid-border justify-content-center" style="margin-top: 10px">Sign In</button>
-                <button id="new-user-btn" class="lightblue-background solid-border justify-content-center" style="margin-top: 10px;margin-left: 50px">New User</button>
+                <button id="new-user-btn" class="lightblue-background solid-border justify-content-center" style="margin-top: 10px;margin-left: 50px;display: none">New User</button>
+                <div id="username-error" class="alert alert-danger error-message" role="alert">Invalid Username</div>
+                <div id="password-error" class="alert alert-danger error-message" role="alert">Invalid Password</div>
               </div>
               <br/>
             </div>
